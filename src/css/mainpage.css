@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.main{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+ 
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #211C84 70%,#4D55CC);
+
+
+}
+
+.main h2, .main p {
+    color:white;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-content{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.title-container{
+
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+.title-container h2, .title-container p{
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+
+}
+.title-container p{
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.title-container h2{
+    font-weight: 500;
+    font-size: 55px;
+    letter-spacing: 5px;
+    color:#FFEAEA;
+    margin: 0;
+}
+.file-container{
+    width: 70%;
+    height: 80%;
+    margin-top: 50px;
+    background-color: rgba(181, 168, 213, 0.2);
+    position: relative;
+    border-radius: 50px;
+
+    border: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#fileInput{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+}
+
+.btn{
+    width: 200px;
+    height: 55px;
+    background-color:#211C84;
+    border: solid 1px #e1ccfa;
+    color: white;
+    font-size: 20px;
+    font-size: 600;
+    border-radius: 20px;
+    margin-top: 20px;
+    color:#FFEAEA ;
+}
+
+.btn:hover{
+
+    background-color: #141242;
+    color: white;
+    border: solid 1px white;
+}
