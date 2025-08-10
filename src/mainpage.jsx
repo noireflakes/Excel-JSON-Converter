@@ -32,12 +32,15 @@ function Mainpage(){
                 inputText.innerHTML=file.name
                 console.log('this is a json');
                 jsonbtn.style.display = "inline";
-            } else if (file.type === "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
+            } else if (file.type === "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" ||
+                file.type === 'application/vnd.ms-excel'||
+                file.type === "application/csv" ||
+                file.type === "text/csv"
+                
+                
+                ) {
                 console.log('this is an excel');
                 inputText.innerHTML=file.name;
-                
-                
-
     
                 excelbtn.style.display = "inline";
             } else {
@@ -55,11 +58,12 @@ function Mainpage(){
     };
 
     const handleJsonClick = () => {
-
-     
         const reader = new FileReader();
         reader.onload = (event) => {
-            const data = JSON.parse(event.target.result);
+            let data = JSON.parse(event.target.result);
+            if (!Array.isArray(data)){
+                data=[data]
+            }
             const workbook = XLSX.utils.book_new();
             const worksheet = XLSX.utils.json_to_sheet(data);
             XLSX.utils.book_append_sheet(workbook, worksheet);

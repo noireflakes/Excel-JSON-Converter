@@ -7,7 +7,7 @@
     padding-bottom: 30px;
     
 }
-p,td,th,a{
+td div,td,th,a{
     color: white;
     font-family: 'poppins';
 }
@@ -19,9 +19,6 @@ table{
     margin-top: 20px;
     table-layout: fixed;
     border-collapse: collapse;
-
-
-
 
 }
 th{
