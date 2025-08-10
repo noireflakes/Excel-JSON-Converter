@@ -23,11 +23,16 @@ table{
 }
 th{
     font-weight: 600;
+    font-size: clamp(12px, 2vw, 14px);
 
 }
 th,td{
-    padding-left: 25px;
+    margin: 0;
+    padding-left: clamp(2px, .5vw, 25px);
 
+}
+td{
+    font-size: clamp(10px, 2vw, 16px);
 }
 .mid{
     text-align: center;
@@ -39,13 +44,17 @@ a{
 .icon-container{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 30px;
-}
-td,th{
-    margin: 0;
-    
+    padding-top: 1rem;
+  
+   
+  
 }
 h5{
     margin: 0;
     margin-top: 10px;
+}
+
+a svg {
+  width: clamp(20px, 2vw, 40px);
+  height: clamp(20px, 2vw, 40px);
 }
