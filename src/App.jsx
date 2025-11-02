@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import Mainpage from './mainpage'
-
-
-
+import { useState } from "react";
+import MainContent from "./components/MainContent/MainContent";
+import Footer from "./components/footer/footer";
 function App() {
-
-
   return (
-    <Mainpage></Mainpage>
-  )
+    <div>
+      <MainContent />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
